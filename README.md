@@ -50,7 +50,7 @@ tar -xvzf go-ipfs_v0.22.0_linux-amd64.tar.gz
 cd go-ipfs
 ./install.sh
 4.Initialize IPFS Node
-~/.local/bin/ipfs init
+```~/.local/bin/ipfs init```
 5.Start IPFS Daemon
 ~/.local/bin/ipfs daemon
 6.Create a sample file
