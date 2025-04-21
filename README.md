@@ -1,143 +1,263 @@
 # blockchain-assingment-1
+
+
+
 #Create Metamask Wallet (Sepolia Testnet)
+
+
 #Introduction
 1.Network : Sepolia Testent
+
 2.Amount Sent : 0.02 ETH
 
 
 4.Status : Successful
 
+
 #Getting Sepolia ETH from Faucet
+
 1.Visited the google cloud Sepolia Faucet.
+
 2.Logged in with my google account.
+
 3.Entered my Metamask wallet address.
+
 4.Clicked on "Request 0.02 ETH".
+
 5.ETH was sent to my wallet within a few seconds.
+
 6.Verified the transaction on sepolia Etherscan.
 
+
+
 #STEPS FOLLOWED
+
 1.Connected Metamask to Sepolia Testnet.
+
 2.Claimed Sepolia ETH from faucet.
-3.Sent ETH to another Address.
+
+3.Sent ETH to another Address
+
 4.Verified transaction was confirmed.
 
 #screenshot
+
 below is the screenshot of the transaction
+
+
 ![WhatsApp Image 2025-04-21 at 11 17 40_bdd5b73a](https://github.com/user-attachments/assets/b414ef4a-dd32-4544-90ac-f6c8c7215e58)
+
+
 ![WhatsApp Image 2025-04-21 at 11 17 40_323e7cd5](https://github.com/user-attachments/assets/681641fb-d19f-4a25-a293-f8ec8f8ea40d)
 
 
 #Practical 2
+
+
 #IPFS Practical - Uploading a file to IPFS
 #IPFS Installation
+
  downloaded and install IPFS desktop for windows from the official website : https://docs.ipfs.tech/install/ipfs-desktop/
  #IPFS Setup
+ 
 After installing, I launched the IPFS desktop.
 IPFS node automatically connected and status showed as Online.
 
 #File Upload
 1.I clicked on the file section in IPFS Desktop.
+
 2.Then i selected the option "Import" and uploaded a sample file, picture of flower and music also.
+
 3.Once the file was uploaded, IPFS generate a unique CID(Content Identifier) for the file.
+
 ![Screenshot 2025-04-10 113433](https://github.com/user-attachments/assets/c614dc6b-b154-48e2-b1d6-a1ff16c5a302)
 
 #Encrypting and Decrypting
+
 1.Download IPFS CLI:
-wget https://dist.ipfs.tech/go-ipfs/v0.22.0/go-ipfs_v0.22.0_linux-amd64.tar.gz
+wget ```https://dist.ipfs.tech/go-ipfs/v0.22.0/go-ipfs_v0.22.0_linux-amd64.tar.gz```
+
 2.Extract the tar file:
-tar -xvzf go-ipfs_v0.22.0_linux-amd64.tar.gz
+
+```tar -xvzf go-ipfs_v0.22.0_linux-amd64.tar.gz```
+
 3.Install IPFS:
-cd go-ipfs
-./install.sh
+
+```cd go-ipfs```
+
+```./install.sh```
+
 4.Initialize IPFS Node
+
 ```~/.local/bin/ipfs init```
+
 5.Start IPFS Daemon
-~/.local/bin/ipfs daemon
+
+```~/.local/bin/ipfs daemon```
+
 6.Create a sample file
-echo "hello, IPFS!" > hello.txt
+
+```echo "hello, IPFS!" > hello.txt```
+
 6.Add original file to IPFS
-~/.local/bin/ipfs add hello.txt
+
+```~/.local/bin/ipfs add hello.txt```
+
 7.Encrypt the file using OpenSSL
-openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -in hello.txt -out hello.enc
+
+```openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -in hello.txt -out hello.enc```
+
 8.Upload the encrypted file to IPFS
-~/.local/bin/ipfs add hello.enc
+
+```~/.local/bin/ipfs add hello.enc```
+
 9.Decrypt the file
-openssl enc -d -aes-256-cbc -pbkdf2 -iter 100000 -in retrieved.enc -out decrypted.txt
+
+```openssl enc -d -aes-256-cbc -pbkdf2 -iter 100000 -in retrieved.enc -out decrypted.txt```
+
 10.See decrypted content
-cat decrypted.txt
+
+```cat decrypted.txt```
+
 11.Add decrypted file to IPFS
-~/.local/bin/ipfs add decrypted.txt
+
+```~/.local/bin/ipfs add decrypted.txt```
+
 
 
 #Practical 3
+
+
 #Hyperledger Fabric Practical
+
 1.Install Golang
-sudo apt install golang-go
+
+```sudo apt install golang-go```
+
+
 #Screenshot
+
 ![WhatsApp Image 2025-04-21 at 11 44 11_058135ab](https://github.com/user-attachments/assets/4fca1426-473f-45a1-a859-1db486e60aaa)
 
+
+
 2.Check Docker Version
-docker --version
+
+```docker --version```
+
 Verifies that Docker is installed and running correctly.
+
 #screenshot
+
 ![WhatsApp Image 2025-04-21 at 11 44 11_460f8bb6](https://github.com/user-attachments/assets/1a0ae3f6-0108-4baa-8af5-3fe21936b443)
 
+
+
 3.Check Docker Compose Version
-docker compose version
+
+```docker compose version```
+
 Verifies the installation of Docker Compose.
+
 #screenshot
+
 ![WhatsApp Image 2025-04-21 at 11 52 25_2718e33c](https://github.com/user-attachments/assets/c638e357-5c37-4be4-a1c3-d4035c6c3498)
 
+
+
 4.List Files in Current Directory
-ls
+```ls```
+
 Shows the list of files and folders in the current directory.
 
+
 5.Clone the Fabric Samples Repository and Move into the Cloned Folder
-git clone https://github.com/Akshitakaushik123/fabric-samples.git; cd fabric-samples
+
+```git clone https://github.com/Akshitakaushik123/fabric-samples.git; cd fabric-samples```
+
 Downloads the official Hyperledger Fabric sample code from GitHub. Enters the cloned folder where Fabric examples are available.
+
+
 #screenshot
+
+
 ![WhatsApp Image 2025-04-21 at 11 44 12_3dffbe75](https://github.com/user-attachments/assets/2b8eab1f-f696-4500-a1a5-8e8fe6f4022b)
 
+
+
 6.Download Fabric Binaries
-curl -sSL https://bit.ly/2ysbOFE | bash -s
+
+```curl -sSL https://bit.ly/2ysbOFE | bash -s```
+
 Downloads necessary Fabric binaries and Docker images like peer, orderer, and cryptogen.
+
 #Screenshot
+
 ![WhatsApp Image 2025-04-21 at 11 44 12_70ddd487](https://github.com/user-attachments/assets/2a816bc6-c0b1-4947-9ecd-d1370366ab7a)
+
+
 ![WhatsApp Image 2025-04-21 at 11 44 13_29da4bcc](https://github.com/user-attachments/assets/f9192bff-2b77-4167-98cf-2f4fa3114cdc)
+
+
 
 7.Enter the Test Network Directory
 
-cd test-network
+```cd test-network```
+
 Navigates to the directory that contains scripts for running a sample Fabric network.
 
+
 #Screenshot
+
 ![WhatsApp Image 2025-04-21 at 12 00 08_29f54d96](https://github.com/user-attachments/assets/fc2c7480-6026-4a73-a4c8-be8ee2dfa8e6)
 
+
+
 8.View the Network Script
-./network.sh
+
+```./network.sh```
+
 Shows the options available with the network.sh script.
 
 #Screenshot
+
 ![WhatsApp Image 2025-04-21 at 11 44 13_d042df86](https://github.com/user-attachments/assets/efb2d661-8706-4330-bef5-f53326442be4)
 
+
+
 9.Start the Fabric Network
-./network.sh up
+
+```./network.sh up```
+
 Starts the network by launching peer, orderer, and CA containers, and generates the required cryptographic materials.
 
 #Screenshot
+
 ![WhatsApp Image 2025-04-21 at 11 44 14_eb5ca2fd](https://github.com/user-attachments/assets/fca12f83-5504-406e-8b35-6e64fe8f19ad)
 
+
+
 10.Create a Channel
-./network.sh createChannel
+
+```./network.sh createChannel```
+
 Creates a default channel (usually named mychannel) and joins the peers to it.
+
 
 #Screenshot
 
+
+
 11.Shut Down the Network
-./network.sh down
+
+
+```./network.sh down```
+
 Stops all containers and deletes the crypto material and artifacts created during the setup.
 
 #Screenshot
+
+
 ![WhatsApp Image 2025-04-21 at 11 44 15_4b7926cd](https://github.com/user-attachments/assets/7ed34dbf-0f3f-431f-98ab-eb84ef12202d)
 
 
