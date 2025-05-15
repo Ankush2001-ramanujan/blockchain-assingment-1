@@ -262,6 +262,64 @@ Stops all containers and deletes the crypto material and artifacts created durin
 
 
 
+#Practical 4
+
+
+Solidity
+Step 1: Set Up the Development Environment
+
+
+Website: https://remix.ethereum.org
+
+It’s an online editor where you can write, test, and deploy Solidity code directly in your browser. No installation needed.
+
+
+Step 2: Write Your First Smart Contract (in Solidity)
+
+pragma solidity ^0.8.0;
+
+contract HelloWorld {
+    string public message = "Hello Blockchain!";
+
+    function setMessage(string memory newMessage) public {
+        message = newMessage;
+    }
+}
+
+#Step 3: Compile the Contract In Remix:
+
+
+Click on the Solidity compiler tab (compiler icon).
+
+
+Click Compile to check for errors.
+
+
+
+![Screenshot 2025-05-15 235325](https://github.com/user-attachments/assets/4a1a252a-bb87-4e29-b14f-142897bb20f9)
+
+
+
+
+#Step 4: Deploy the Smart Contract Go to the Deploy & Run Transactions tab in Remix.
+
+Choose Environment as "JavaScript VM" (for testing in browser).
+
+Click Deploy.
+
+After deployment, contract will appear in the Deployed Contracts section.
+
+Step 5: Interact with the Contract Now you can:
+
+Click message() to read the current message.
+
+Use setMessage() to change the message.
+
+This simulates how smart contracts work on blockchain.
+
+
+
+
 
 
 
